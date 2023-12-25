@@ -11,14 +11,8 @@
 	<textarea rows="4" cols="50"  id="textInput" placeholder="Write your comment here..." ></textarea>
 	<button id="submit-btn">Submit</button>
 	<div class="comments-container" >
+		
 <!-- 		<div class="comment">
-			<h1>Task 1</h1>
-			<div class="author">
-				<p>Piyush</p>
-				<p>Mon, 25 Dec 2023 17:17:20 GMT</p>
-			</div>
-		</div>
-		<div class="comment">
 			<h1>Task 2</h1>
 			<div class="author">
 				<p>Piyush</p>
@@ -33,7 +27,19 @@
 			</div>
 		</div> -->
 	</div>
-	
+	<script>
+		const date=new Date().toUTCString();
+		const temp=document.getElementsByClassName("comments-container")[0];
+		temp.innerHTML=`
+        <div class="comment">
+			<h1>Task 1</h1>
+			<div class="author">
+				<p>Piyush</p>
+				<p>${date}</p>
+			</div>
+		</div>
+  `
+	</script>
     <script type="text/javascript" src="./script.js">
 </script>
 
