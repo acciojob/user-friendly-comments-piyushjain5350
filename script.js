@@ -6,7 +6,7 @@ const submitBtn=document.querySelector("#submit-btn");
 submitBtn.addEventListener("click",()=>{
 	if(textBoxInput.value.length!==0){
 		const div=document.createElement("div");
-		div.classList.add("comments")
+		div.classList.add("comment")
 		const date=new Date();
 		div.innerHTML=`
 						<h1>${textBoxInput.value}</h1>
